@@ -74,6 +74,7 @@ public class PlantController {
     @DeleteMapping("/{plantId}")
     public ResponseEntity<Void> deletePlant(@PathVariable Long plantId) {
         plantService.deletePlant(plantId);
+        System.out.println("haha");
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
